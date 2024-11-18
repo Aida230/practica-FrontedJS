@@ -4,16 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clone Wallapop</title>
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <h1>Clone-Wallapop</h1>
-  <section>
+  <header>
+    <h1>Clone-Wallapop</h1>
+    <nav>
+      <div>
+        <!-- Barra de búsqueda -->
+        <input type="text" id="search-bar" placeholder="Buscar productos..." />
+        <button id="search-btn">Buscar</button>
+        <button>Login</button>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
     <div>
       <img 
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWNZUIl1-WfkVs_2f3WHDrWLUOkgh8fSbBw&s" 
-      alt="kc-logo">
+      src="./image/Buhonero.webp" 
+      alt="logo">
     </div>
-
   </section>
   <section id="products-container"></section>
   <script type="module" src="products/products-controller.js"></script>

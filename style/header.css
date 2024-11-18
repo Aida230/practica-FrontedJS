@@ -1,0 +1,70 @@
+/* Estilo global del header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff637d; /* Color de fondo similar a Wallapop */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header img {
+  width: 40px; /* Tamaño de imagen logo */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Encabezado */
+header h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra suave para el texto */
+}
+
+
+/* Estilos del contenedor de la barra de navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+nav button {
+  background-color: #66d7d1; /* Color de fondo del botón similar al de Wallapop */
+  color: #755b05;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #fff87f; /* Cambio de color al pasar el mouse */
+}
+
+
+

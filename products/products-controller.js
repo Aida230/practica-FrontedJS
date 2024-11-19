@@ -14,12 +14,30 @@ function drawProducts(products, productsContainer) {
   }
 }
 
-async function showProducts() {
-  const productsContainer = document.querySelector('#products-container');
-  productsContainer.innerHTML = "";
-  const products = await getProducts();
-  drawProducts(products, productsContainer)
+function fireEvent(message, type, element) {
+  const customEvent = new CustomEvent("loading-products-info", {
+    detail: {
+      message,
+      type,
+    }
+  });
+  element.dispatchEvent(customEvent);
 }
 
-document.addEventListener("DOMContentLoaded", showProducts);
+export async function productsController(productsContainer) {
+  const spinner = document.querySelector('.spinner')
+  productsContainer.innerHTML = "";
+
+  spinner.classList.toggle('hidden');
+  try {
+    const products = await getProducts();
+    fireEvent("productos cargados correctamente", "success", productsContainer);
+    drawProducts(products, productsContainer)
+  } catch (error) {
+    // alert(error.message)
+    fireEvent(error.message, "error", productsContainer);
+  } finally {
+    spinner.classList.toggle('hidden');
+  }
+}
 

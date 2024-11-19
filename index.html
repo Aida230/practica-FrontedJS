@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clone Wallapop</title>
+  <link rel="stylesheet" href="./style/spinner.css" />
+  <link rel="stylesheet" href="./notifications/notification-style.css" />
   <link rel="stylesheet" href="./style/header.css">
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+  <section class="spinner hidden">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   <header>
     <h1>Clone-Wallapop</h1>
     <nav>
@@ -26,7 +35,9 @@
       alt="logo">
     </div>
   </section>
+  <section id="notification-container"></section> <!--Este seria el segundo paso la creacion de la seccion en el html una vez creado el controllador-->
   <section id="products-container"></section>
-  <script type="module" src="products/products-controller.js"></script>
+
+  <script type="module" src="index.js"></script>
 </body>
 </html>

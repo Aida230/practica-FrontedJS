@@ -4,11 +4,12 @@
 }
 
 .notification.success {
-  background-color: lightblue;
-  border-color: rgb(0, 172, 230);
+  border-radius: 1rem;
+  background-color: rgb(193, 173, 230);
+  border-color: rgb(119, 0, 230);
 }
 
 .notification.error {
-  background-color: lightcoral;
-  border-color: rgb(242, 8, 8);
+  background-color: rgb(240, 128, 175);
+  border-color: rgb(242, 8, 125);
 }

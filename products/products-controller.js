@@ -40,4 +40,3 @@ export async function productsController(productsContainer) {
     spinner.classList.toggle('hidden');
   }
 }
-

@@ -1,7 +1,7 @@
 //html que vamos a mostrar
 
 export const buildProduct = (product) => {
-  const newProduct = document.createElement('div')
+  const newProduct = document.createElement('button')
   newProduct.innerHTML = `
     <span>${product.id}</span>
     <span>${product.name}</span>

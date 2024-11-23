@@ -39,12 +39,6 @@ section > div img:hover {
 }
 
 
-
-
-
-
-
-
 .product-card p {
   font-size: 1rem;
   color: #bdc3c7; /* Color gris claro para la descripción */
@@ -75,29 +69,6 @@ section > div img:hover {
   background-color: #3498db; /* Azul para "Compra" */
 }
 
-/* 8. Botón de acción */
-button {
-  background-color: #f312bb; /* Color dorado */
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  background-color: #e67e22; /* Cambio a color naranja dorado */
-  transform: scale(1.05); /* Efecto de escala */
-}
-
-button:disabled {
-  background-color: #95a5a6;
-  cursor: not-allowed;
-}
 
 /* 9. Fondo adicional para diseño */
 footer {

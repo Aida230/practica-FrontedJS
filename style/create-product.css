@@ -1,0 +1,69 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f3f9; /* Fondo blanco rosado */
+  color: #2e2e2e; /* Texto negro suave */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #a64ca6; /* Lila vibrante */
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; /* Fondo blanco */
+  border: 2px solid #e2bfe2; /* Borde rosado claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4c4c4c; /* Gris oscuro */
+  font-weight: bold;
+}
+
+input, select {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d8a8d8; /* Borde rosado suave */
+  border-radius: 5px;
+  background-color: #faf6fb; /* Fondo blanco rosado */
+  color: #2e2e2e; /* Texto negro suave */
+}
+
+input::placeholder {
+  color: #a8a8a8; /* Placeholder gris */
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #d97cd9; /* Rosado fuerte */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a64ca6; /* Lila vibrante */
+}
+
+button:active {
+  background-color: #832783; /* Lila oscuro */
+}

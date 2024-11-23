@@ -38,37 +38,49 @@ section > div img:hover {
   margin-top: 40px;
 }
 
-
-.product-card p {
-  font-size: 1rem;
-  color: #bdc3c7; /* Color gris claro para la descripción */
-  margin: 10px 15px;
-  line-height: 1.4;
+.product-card:hover {
+  transform: scale(1.05);  /* Efecto de escala al pasar el cursor */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Efecto de sombra al hacer hover */
 }
 
-
-
-.product-card .type {
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #fff;
-  background-color: #8e44ad; /* Color púrpura lujoso */
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 10px 15px;
+.product-image-container {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* 6. Estilo de tipo: "Venta" o "Compra" */
-.product-card .type.venta {
-  background-color: #e74c3c; /* Rojo para "Venta" */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-.product-card .type.compra {
-  background-color: #3498db; /* Azul para "Compra" */
+.product-info {
+  text-align: center;
 }
 
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #4caf50;  /* Color verde para el precio */
+  font-weight: bold;
+}
+
+.product-type {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
 
 /* 9. Fondo adicional para diseño */
 footer {

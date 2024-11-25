@@ -16,7 +16,7 @@ export function loginController(loginForm) {
     // 2- validar el mail
     const emailRegExp = new RegExp(REGEXP.email);
     if (!emailRegExp.test(userEmail)) {
-      alert('formato de mail incorrecto')
+      alert('formato de email incorrecto')
     } else {
       handleLoginUser(userEmail, password)
     }
@@ -25,8 +25,12 @@ export function loginController(loginForm) {
 }
 
 async function handleLoginUser(userEmail, password) {
-  const token = await loginUser(userEmail, password);
-
-  localStorage.setItem("jwt", token);
-  window.location.href = "/"
+  try {
+    const token = await loginUser(userEmail, password);
+  
+    localStorage.setItem("jwt", token);
+    window.location.href = "/"
+  } catch (error) {
+    alert(error.message)
+  }
 }

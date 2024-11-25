@@ -64,3 +64,17 @@ button:hover {
 .search-bar button:hover {
   background-color: #450364;;
 }
+
+.cp {
+  background-color: #aa0080;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}

@@ -10,7 +10,9 @@ export async function loginUser(email, password){
       "Content-type": "application/json"  
     }
   });
-
+  if (response.status === 401) {
+    throw new Error ("User no autorizado")
+  }
   if (!response.ok) {
     throw new Error("error iniciando sesión")
   }

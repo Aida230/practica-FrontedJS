@@ -1,0 +1,102 @@
+/* Contenedor principal del detalle del producto */
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;  /* Fuente estándar */
+  background-color: #f7f7f7;        /* Fondo suave gris claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header de la página */
+.page-header {
+  background-color: #9b59b6;         /* Fondo lila */
+  color: white;                      /* Texto blanco */
+  text-align: center;                /* Centrado de texto */
+  padding: 30px 0;                   /* Espaciado superior e inferior */
+}
+
+/* Estilo para el título principal */
+.page-header h1 {
+  font-size: 3rem;                   /* Tamaño grande para el encabezado */
+  font-weight: bold;                 /* Negrita para el título */
+  letter-spacing: 2px;               /* Espaciado entre las letras */
+  text-transform: uppercase;         /* Texto en mayúsculas */
+  margin: 0;                          /* Eliminar márgenes */
+}
+
+/* Efecto hover para el encabezado */
+.page-header h1:hover {
+  color: #25021a;                    /* Cambio a color rosado al pasar el ratón */
+  cursor: pointer;                   /* Cambio de cursor para indicar interactividad */
+}
+
+.product-detail {
+  background-color: #ffffff;  /* Fondo blanco para el contenedor */
+  border-radius: 10px;         /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  max-width: 500px;            /* Ancho máximo */
+  margin: 20px auto;           /* Centrado en la página */
+  padding: 20px;               /* Espaciado interno */
+  text-align: center;          /* Texto centrado */
+  color: #333333;              /* Texto oscuro */
+}
+
+/* Imagen del producto */
+.product-image {
+  width: 100%;                 /* Imagen con el ancho completo del contenedor */
+  height: auto;                /* Mantiene las proporciones de la imagen */
+  border-radius: 8px;          /* Bordes redondeados en la imagen */
+  object-fit: cover;           /* Hace que la imagen cubra completamente el área del contenedor */
+  margin-bottom: 20px;         /* Espaciado inferior */
+}
+
+/* Nombre del producto */
+.product-name {
+  font-size: 2rem;             /* Tamaño grande para el nombre */
+  color: #9b59b6;              /* Color lila */
+  font-weight: bold;           /* Negrita */
+  margin-bottom: 10px;         /* Espaciado inferior */
+}
+
+/* Descripción del producto */
+.product-description {
+  font-size: 1rem;             /* Tamaño de fuente estándar */
+  color: #555555;              /* Color gris oscuro */
+  margin-bottom: 15px;         /* Espaciado inferior */
+}
+
+/* Precio del producto */
+.product-price {
+  font-size: 1.2rem;           /* Tamaño de fuente ligeramente mayor */
+  color: #e74c3c;              /* Color rosado (rojo claro) */
+  font-weight: bold;           /* Negrita */
+  margin-bottom: 10px;         /* Espaciado inferior */
+}
+
+/* Tipo del producto */
+.product-type {
+  font-size: 1rem;             /* Tamaño estándar */
+  color: #7f8c8d;              /* Color gris */
+  margin-bottom: 20px;         /* Espaciado inferior */
+}
+
+/* Botón de eliminar */
+.delete-product-button {
+  background-color: #f50b9b;   /* Fondo rosado/amarillo */
+  color: white;                /* Texto blanco */
+  border: none;                /* Sin borde */
+  padding: 12px 20px;          /* Relleno interior */
+  font-size: 1rem;             /* Tamaño de texto estándar */
+  border-radius: 5px;          /* Bordes redondeados */
+  cursor: pointer;             /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover para el botón de eliminar */
+.delete-product-button:hover {
+  background-color: #d35400;   /* Cambio de color al pasar el mouse */
+}
+
+.delete-product-button:focus {
+  outline: none;               /* Elimina el borde del enfoque */
+}

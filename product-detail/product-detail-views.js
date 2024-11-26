@@ -10,6 +10,13 @@ export function buildProductDetail(product) {
   `;
 }
 
+export function buildHomePageButton() {
+  const homeButton = document.createElement("button");
+  homeButton.textContent = "Back Home";
+  homeButton.className = "home-page-button";
+  return homeButton;
+}
+
 export function buildDeleteButton() {
   const removeButton = document.createElement("button");
   removeButton.textContent = "Eliminar Producto";

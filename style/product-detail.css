@@ -100,3 +100,15 @@ body {
 .delete-product-button:focus {
   outline: none;               /* Elimina el borde del enfoque */
 }
+
+.home-page-button {
+  background-color: #f5740b;  
+  color: rgb(12, 0, 0);               
+  border: none;                
+  padding: 12px 20px;          
+  font-size: 1.5rem;            
+  border-radius: 5px;          
+  cursor: pointer;             
+  transition: background-color 0.3s ease;
+
+}

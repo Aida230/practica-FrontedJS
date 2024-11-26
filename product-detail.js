@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const productId = searchParams.get("id");
 
   // 2- acceder al nodo donde pintaremos el detalle del tweet
-  const productDetailContainer = document.querySelector("#product-detail")
+  const productDetailContainer = document.querySelector("#product-detail");
   
   productDetailController(productDetailContainer, productId)
 

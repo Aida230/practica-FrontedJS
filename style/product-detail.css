@@ -1,27 +1,27 @@
 /* Contenedor principal del detalle del producto */
 /* Estilos generales */
 body {
-  font-family: 'Arial', sans-serif;  /* Fuente estándar */
-  background-color: #f7f7f7;        /* Fondo suave gris claro */
+  font-family: 'Arial', sans-serif;
+  background-color: #f1e4aa;        
   margin: 0;
   padding: 0;
 }
 
 /* Header de la página */
 .page-header {
-  background-color: #9b59b6;         /* Fondo lila */
-  color: white;                      /* Texto blanco */
-  text-align: center;                /* Centrado de texto */
-  padding: 30px 0;                   /* Espaciado superior e inferior */
+  background-color: #f51708;         
+  color: rgba(17, 8, 8, 0.774);                      
+  text-align: center;               
+  padding: 15px 0; 
 }
 
 /* Estilo para el título principal */
 .page-header h1 {
-  font-size: 3rem;                   /* Tamaño grande para el encabezado */
-  font-weight: bold;                 /* Negrita para el título */
-  letter-spacing: 2px;               /* Espaciado entre las letras */
-  text-transform: uppercase;         /* Texto en mayúsculas */
-  margin: 0;                          /* Eliminar márgenes */
+  font-size: 3rem;                   
+  font-weight: bold;                 
+  letter-spacing: 2px;               
+  text-transform: uppercase;         
+  margin: 0;                          
 }
 
 /* Efecto hover para el encabezado */
@@ -33,7 +33,7 @@ body {
 .product-detail {
   background-color: #ffffff;  /* Fondo blanco para el contenedor */
   border-radius: 10px;         /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  box-shadow: 0 4px 8px rgba(236, 4, 4, 0.432);  /* Sombra sutil */
   max-width: 500px;            /* Ancho máximo */
   margin: 20px auto;           /* Centrado en la página */
   padding: 20px;               /* Espaciado interno */
@@ -53,7 +53,7 @@ body {
 /* Nombre del producto */
 .product-name {
   font-size: 2rem;             /* Tamaño grande para el nombre */
-  color: #9b59b6;              /* Color lila */
+  color: #0a010e;              /* Color lila */
   font-weight: bold;           /* Negrita */
   margin-bottom: 10px;         /* Espaciado inferior */
 }
@@ -82,13 +82,13 @@ body {
 
 /* Botón de eliminar */
 .delete-product-button {
-  background-color: #f50b9b;   /* Fondo rosado/amarillo */
-  color: white;                /* Texto blanco */
-  border: none;                /* Sin borde */
-  padding: 12px 20px;          /* Relleno interior */
-  font-size: 1rem;             /* Tamaño de texto estándar */
-  border-radius: 5px;          /* Bordes redondeados */
-  cursor: pointer;             /* Cambia el cursor al pasar sobre el botón */
+  background-color: #f5740b;  
+  color: rgb(12, 0, 0);               
+  border: none;                
+  padding: 12px 20px;          
+  font-size: 1.5rem;            
+  border-radius: 5px;          
+  cursor: pointer;             
   transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
 }
 

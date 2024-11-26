@@ -1,14 +1,14 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f3f9; /* Fondo blanco rosado */
-  color: #2e2e2e; /* Texto negro suave */
+  background-color: rgb(243, 189, 73);
+  color: #2e2e2e;
   margin: 0;
   padding: 20px;
   text-align: center;
 }
 
 h1 {
-  color: #a64ca6; /* Lila vibrante */
+  color: #050505; /* Lila vibrante */
   margin-bottom: 20px;
 }
 
@@ -17,7 +17,7 @@ form {
   margin: 0 auto;
   padding: 20px;
   background: #ffffff; /* Fondo blanco */
-  border: 2px solid #e2bfe2; /* Borde rosado claro */
+  border: 2px solid #eb554a; /* Borde rosado claro */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
@@ -37,7 +37,7 @@ input, select {
   width: 95%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #d8a8d8; /* Borde rosado suave */
+  border: 1px solid #d66753; /* Borde rosado suave */
   border-radius: 5px;
   background-color: #faf6fb; /* Fondo blanco rosado */
   color: #2e2e2e; /* Texto negro suave */
@@ -52,8 +52,8 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
-  background-color: #d97cd9; /* Rosado fuerte */
+  color: rgb(14, 13, 13);
+  background-color: #f0cd09; /* Rosado fuerte */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #a64ca6; /* Lila vibrante */
+  background-color: #f5aa08; /* Lila vibrante */
 }
 
 button:active {

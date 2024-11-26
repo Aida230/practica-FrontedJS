@@ -1,8 +1,8 @@
 /* 1. Estilos generales */
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #0c0c0c; /* Fondo oscuro */
-  color: #f5ecec; /* Color de texto claro para contraste */
+  background-color: rgb(238, 231, 190);
+  color: #302d2d; /* Color de texto claro para contraste */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,17 +49,18 @@ section > div img:hover {
 }
 
 .product-image {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 5px;
 }
 
 .product-info {
   text-align: center;
+  text-decoration: none;
 }
 
 .product-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #333;
 }

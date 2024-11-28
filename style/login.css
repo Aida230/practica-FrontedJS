@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
   font-family: Arial, sans-serif;
   background: rgb(243, 189, 73);
@@ -10,6 +9,46 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: rgba(255, 0, 0, 0.863);
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 0 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+
+.BackHome {
+  text-decoration: none;
+}
+
+
+header button {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+  border: 2px solid yellow; /* Borde amarillo */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, transform 0.2s; /* Animaciones suaves */
+}
+
+
+header button:hover {
+  background-color: yellow;
+  color: black; 
+  transform: scale(1.05);
+}
+
 
 form {
   background-color: #fff;
@@ -62,3 +101,4 @@ button:hover {
 button:active {
   background-color: #b98015;
 }
+

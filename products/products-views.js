@@ -8,7 +8,7 @@ export const buildProduct = (product) => {
   const newProduct = document.createElement('div');
   newProduct.classList.add('product-card');
 
-  // Estructurar el HTML del producto de manera más organizada
+  
   newProduct.innerHTML = `
     <div class="product-info">
       <span>usuario: ${product.user.username}</span>

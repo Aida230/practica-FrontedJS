@@ -1,17 +1,18 @@
-/* 1. Estilos generales */
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
   background-color: rgb(238, 231, 190);
-  color: #302d2d; /* Color de texto claro para contraste */
+  color: #302d2d;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
 }
 
-/* 3. Sección de la imagen */
+
 section > div {
   text-align: center;
+  text-decoration: none;
   margin-bottom: 40px;
 }
 
@@ -21,15 +22,18 @@ section > div img {
   max-height: 250px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra profunda */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 }
 
 section > div img:hover {
-  transform: scale(1.05); /* Efecto de zoom en la imagen */
+  transform: scale(1.05);
 }
 
-/* 4. Contenedor de productos */
+a {
+  text-decoration: none;
+}
+
 #products-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -38,9 +42,10 @@ section > div img:hover {
   margin-top: 40px;
 }
 
+
 .product-card:hover {
-  transform: scale(1.05);  /* Efecto de escala al pasar el cursor */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Efecto de sombra al hacer hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .product-image-container {
@@ -56,19 +61,20 @@ section > div img:hover {
 
 .product-info {
   text-align: center;
-  text-decoration: none;
+  color: black;
 }
 
 .product-name {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #080808;
 }
 
 .product-description {
   font-size: 14px;
-  color: #777;
+  color: #111010;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 .product-price {
@@ -79,7 +85,7 @@ section > div img:hover {
 
 .product-type {
   font-size: 14px;
-  color: #999;
+  color: #0a0a0a;
   margin-top: 5px;
 }
 

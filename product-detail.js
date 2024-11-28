@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchParams = new URLSearchParams(window.location.search);
   const productId = searchParams.get("id");
 
-  // 2- acceder al nodo donde pintaremos el detalle del tweet
+  // 2- acceder al nodo donde pintaremos el detalle del producto
   const productDetailContainer = document.querySelector("#product-detail");
   
   productDetailController(productDetailContainer, productId)

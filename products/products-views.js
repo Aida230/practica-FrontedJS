@@ -11,12 +11,12 @@ export const buildProduct = (product) => {
   
   newProduct.innerHTML = `
     <div class="product-info">
-      <span>user: ${product.user.username}</span>
-      <h3 class="product-name">${product.name}</h3>
-      <p class="product-description">${product.description}</p>
-      <span class="product-price">$${product.price}</span>
+    <h3 class="product-name">${product.name}</h3>
+    <span>user: ${product.user.username}</span>
+    <p class="product-description">${product.description}</p>
+    <img class="product-image" src="${product.image}" alt="${product.name}"/> 
+    <span class="product-price">$${product.price}</span>
       <span class="product-type">${product.type}</span>
-      <img class="product-image" src="${product.image}" alt="${product.name}"/> 
     </div>
   `;
 

@@ -16,7 +16,7 @@ export function loginController(loginForm) {
     // 2- validar el mail
     const emailRegExp = new RegExp(REGEXP.email);
     if (!emailRegExp.test(userEmail)) {
-      alert('formato de email incorrecto')
+      alert('Formato de email incorrecto')
     } else {
       handleLoginUser(userEmail, password)
     }

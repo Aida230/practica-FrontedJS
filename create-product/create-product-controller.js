@@ -26,7 +26,7 @@ export function createProductController(createProductForm) {
       }, 1000);
 
     } catch (error) {
-      alert("Error al crear el producto: " + error.message);
+      alert("Error al crear el Pokemon: " + error.message);
     }
   });
 
@@ -44,7 +44,7 @@ export function createProductController(createProductForm) {
       );
       return product; // Devuelve el producto creado
     } catch (error) {
-      throw new Error("Error creando el producto en el servidor");
+      throw new Error("Error creando el Pokemon en el servidor");
     }
   }
 }

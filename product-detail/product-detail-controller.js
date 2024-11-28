@@ -38,7 +38,7 @@ export async function productDetailController(productDetailContainer, productId)
                 await removeProduct(product.id);
                 window.location.href = "/";
               } catch (error) {
-                alert("No se pudo eliminar el producto: " + error.message);
+                alert("No se pudo eliminar el Pokemon: " + error.message);
               }
             }
           });
@@ -50,7 +50,7 @@ export async function productDetailController(productDetailContainer, productId)
   } catch (error) {
     // Gestión de errores para la carga de detalles del producto
     if (error.message.includes("not found")) {
-      alert("El producto no existe o no se pudo cargar.");
+      alert("El Pokemon no existe o no se pudo cargar.");
     } else if (error.message.includes("network")) {
       alert("Hubo un problema de conexión. Por favor, inténtalo de nuevo más tarde.");
     } else {

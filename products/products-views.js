@@ -11,7 +11,7 @@ export const buildProduct = (product) => {
   
   newProduct.innerHTML = `
     <div class="product-info">
-      <span>usuario: ${product.user.username}</span>
+      <span>user: ${product.user.username}</span>
       <h3 class="product-name">${product.name}</h3>
       <p class="product-description">${product.description}</p>
       <span class="product-price">$${product.price}</span>
@@ -29,5 +29,5 @@ export const buildProduct = (product) => {
 
 
 export function buildEmptyProductList() {
-  return '<h2>No hay productos disponibles</h2>';
+  return '<h2>No hay Pokemon disponibles</h2>';
 }

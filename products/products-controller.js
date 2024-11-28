@@ -31,7 +31,7 @@ export async function productsController(productsContainer) {
   spinner.classList.toggle('hidden');
   try {
     const products = await getProducts();
-    fireEvent("productos cargados correctamente", "success", productsContainer);
+    fireEvent("Pokemon cargados correctamente", "success", productsContainer);
     drawProducts(products, productsContainer)
   } catch (error) {
     // alert(error.message)

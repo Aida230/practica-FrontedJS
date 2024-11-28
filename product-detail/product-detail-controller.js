@@ -32,7 +32,7 @@ export async function productDetailController(productDetailContainer, productId)
           productDetailContainer.appendChild(removeButtonElement);
 
           removeButtonElement.addEventListener("click", async () => {
-            const shouldRemoveProduct = confirm("¿Seguro que quieres borrar el producto?");
+            const shouldRemoveProduct = confirm("¿Seguro que quieres borrar el Pokemon?");
             if (shouldRemoveProduct) {
               try {
                 await removeProduct(product.id);

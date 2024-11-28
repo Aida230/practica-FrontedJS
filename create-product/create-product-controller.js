@@ -20,7 +20,7 @@ export function createProductController(createProductForm) {
     // 2. Crear el producto
     try {
       const product = await handleProductCreation({ name, description, price, type, image });
-      alert("¡Producto creado con éxito!");
+      alert("¡Pokemon creado con éxito!");
       setTimeout(() => {
         window.location.href = "/";
       }, 1000);

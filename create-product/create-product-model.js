@@ -19,7 +19,7 @@ export async function createProduct(name, description, price, type, image) {
   })
   
   if (!response.ok) {
-    throw new Error("Error creando producto");
+    throw new Error("Error creando pokemon");
   }
 
   const product = await response.json()

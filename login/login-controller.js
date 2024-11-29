@@ -13,7 +13,7 @@ export function loginController(loginForm) {
     const password = passwordElement.value;
     
 
-    // 2- validar el mail
+    // 2- validar el email
     const emailRegExp = new RegExp(REGEXP.email);
     if (!emailRegExp.test(userEmail)) {
       alert('Formato de email incorrecto')

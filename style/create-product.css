@@ -1,9 +1,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url("/image/pokemon.jpg");
-  background-size: cover;
-  background-repeat: repeat-x;
+  background-image: url("/image/gengar\ 2.jpg");
+  background-size:contain;
   color: #2e2e2e; /* Gris oscuro */
   margin: 0;
   padding: 0;
@@ -17,7 +16,7 @@ header {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: red; /* Fondo rojo */
+  background-color: rgba(204, 0, 255, 0.521);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,9 +47,9 @@ header {
 
 form {
   max-width: 400px;
-  margin: 200px auto 30px; /* Asegura espacio debajo del header */
+  margin: 200px 80px; /* Asegura espacio debajo del header */
   padding: 20px;
-  background: white;
+  background: rgba(245, 243, 247, 0.822);
   border: 2px solid #eb554a; /* Borde rojo suave */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

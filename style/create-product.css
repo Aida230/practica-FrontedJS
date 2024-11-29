@@ -1,7 +1,9 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: rgb(243, 189, 73); /* Amarillo suave */
+  background-image: url("/image/pokemon.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
   color: #2e2e2e; /* Gris oscuro */
   margin: 0;
   padding: 0;

@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: rgb(243, 189, 73);
+  background-image: url("/image/bulbasur.png");
+  background-size: cover;
   color: #050505;
   margin: 0;
   padding: 0;

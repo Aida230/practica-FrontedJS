@@ -2,6 +2,7 @@
 
 import { getProducts } from "./products-model.js"
 import { buildProduct, buildEmptyProductList } from "./products-views.js"
+import { fireEvent } from "../utils/fire-event.js"
 
 function drawProducts(products, productsContainer) {
   if(products.length === 0) {
@@ -14,15 +15,7 @@ function drawProducts(products, productsContainer) {
   }
 }
 
-function fireEvent(message, type, element) {
-  const customEvent = new CustomEvent("loading-products-info", {
-    detail: {
-      message,
-      type,
-    }
-  });
-  element.dispatchEvent(customEvent);
-}
+
 
 export async function productsController(productsContainer) {
   const spinner = document.querySelector('.spinner')

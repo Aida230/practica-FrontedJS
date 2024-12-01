@@ -5,12 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crear Producto</title>
   <link rel="stylesheet" href="style/create-product.css">
+  <link rel="stylesheet" href="style/spinner.css">
 </head>
 <body>
   <header>
     <a class="BackHome" href="/"><button>Back home</button></a>
   </header>
+
   <form id="create-product-form">
+    <section class="spinner hidden">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
     <h1>Crear Pokemon</h1>
     <div>
       <label for="name">Nombre del Pokemon</label>

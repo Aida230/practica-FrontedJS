@@ -1,8 +1,11 @@
 import { getCurrentUserInfo } from "../auth/auth-model.js"
 import { getProduct, removeProduct } from "./product-detail-model.js"
 import { buildDeleteButton, buildProductDetail, buildHomePageButton } from "./product-detail-views.js"
+import { spinner } from "../utils/spinner.js";
 
 export async function productDetailController(productDetailContainer, productId) {
+  productDetailContainer.innerHTML = "";
+  spinner('hidden');
   try {
     
     const product = await getProduct(productId);
@@ -59,5 +62,7 @@ export async function productDetailController(productDetailContainer, productId)
 
     // Redirigir a la página principal tras el error
     window.location.href = "/";
+  } finally {
+    spinner('hidden');
   }
 }

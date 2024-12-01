@@ -1,8 +1,10 @@
 import { createProduct } from "./create-product-model.js";
+import { spinner } from "../utils/spinner.js";
 
 export function createProductController(createProductForm) {
   createProductForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+
 
     // Obtener los datos del formulario
     const name = createProductForm.querySelector("#name").value;
@@ -19,6 +21,7 @@ export function createProductController(createProductForm) {
 
     // 2. Crear el producto
     try {
+      spinner('hidden')
       const product = await handleProductCreation({ name, description, price, type, image });
       alert("¡Pokemon creado con éxito!");
       setTimeout(() => {
@@ -27,6 +30,8 @@ export function createProductController(createProductForm) {
 
     } catch (error) {
       alert("Error al crear el Pokemon: " + error.message);
+    } finally {
+      spinner('hidden')
     }
   });
 

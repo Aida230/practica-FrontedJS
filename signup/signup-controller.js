@@ -1,5 +1,6 @@
 import { REGEXP } from "../utils/constants.js";
 import { createUser } from "./signup-model.js";
+import { spinner } from "../utils/spinner.js";
 
 export function signupController(form) {
 
@@ -41,9 +42,12 @@ export function signupController(form) {
 async function handleCreateUser(userEmail, password) {
   // 3- consumir sparrest para crear el usuario
   try {
+    spinner('hidden')
     await createUser(userEmail, password)
     window.location.href = "/";
   } catch (error) {
     alert(error.message)
+  } finally {
+    spinner('hidden')
   }
 }

@@ -3,6 +3,7 @@
 import { getProducts } from "./products-model.js"
 import { buildProduct, buildEmptyProductList } from "./products-views.js"
 import { fireEvent } from "../utils/fire-event.js"
+import { spinner } from "../utils/spinner.js";
 
 function drawProducts(products, productsContainer) {
   if(products.length === 0) {
@@ -15,13 +16,9 @@ function drawProducts(products, productsContainer) {
   }
 }
 
-
-
 export async function productsController(productsContainer) {
-  const spinner = document.querySelector('.spinner')
   productsContainer.innerHTML = "";
-
-  spinner.classList.toggle('hidden');
+  spinner('hidden');
   try {
     const products = await getProducts();
     fireEvent("Pokemon cargados correctamente", "success", productsContainer);
@@ -30,6 +27,6 @@ export async function productsController(productsContainer) {
     // alert(error.message)
     fireEvent(error.message, "error", productsContainer);
   } finally {
-    spinner.classList.toggle('hidden');
+    spinner('hidden');
   }
 }

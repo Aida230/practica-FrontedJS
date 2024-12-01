@@ -9,7 +9,8 @@ export async function productDetailController(productDetailContainer, productId)
   try {
     
     const product = await getProduct(productId);
-
+    alert('detalles del pokemon cargados correctamente')
+    
     // Construir y mostrar los detalles del producto
     productDetailContainer.innerHTML = buildProductDetail(product);
 

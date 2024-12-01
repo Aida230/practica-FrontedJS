@@ -35,6 +35,7 @@ export function signupController(form) {
     if (errors.length === 0) {
       handleCreateUser(userEmail, password)
     }
+    alert ("Registro realizado correctamente")
   })
 
 }

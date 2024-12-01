@@ -21,6 +21,7 @@ export function loginController(loginForm) {
     } else {
       handleLoginUser(userEmail, password)
     } 
+    alert('Login realizado correctamente')
 
   })
 }
